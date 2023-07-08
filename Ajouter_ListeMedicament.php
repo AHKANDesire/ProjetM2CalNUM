@@ -1,4 +1,8 @@
 <?php
+if(!(isset($_POST['dci'])))
+header('location:FormMedicament.html');
+?>
+<?php
 include"connect.php";
 $dci=$_POST['dci'];
 $forme=$_POST['forme'];
