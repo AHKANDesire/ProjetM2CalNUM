@@ -35,10 +35,11 @@ $result2=mysqli_query($con,$req2)or die('ERROR2');
             <tr>
                 <td><?php echo"$col2[0]"; ?></td><td><?php echo"$col2[1]"; ?></td><td><?php echo"$col2[2]"; ?></td><td><?php echo"$col2[3]"; ?></td>
             </tr>
+            <tr>
+                <td><a href='Declaration_Medicament.php?Id=<?php echo"$col2[0]"; ?>'>SUIVANT</a></td>
+            </tr>
             <?php } ?>
         </table>
-        <font color="red">RETENEZ LE NUMERO Id_Medicament AVANT DE CONTINUER</font><br>
-        <p><a href="FormRegistre_Entrees">SUIVANT</a></p>
     </body>
 </html>
 <?php mysqli_close($con); ?>
