@@ -4,9 +4,10 @@
                 <title> ListeMedicament </title>
         </HEAD>
         <BODY>
-            <B> POUR AJOUTER UN NOUVEAU MEDICAMENT:</B><BR>
-              <FORM METHOD="POST" ACTION="Ajouter_ListeMedicament.php">
-               <P><B>ABREVIATION:</B>DCI=Dénomination Commune Internationale</P>
+              <b><font color='red'>NOMINATION MEDICAMENT</font></b><BR>
+              <B>REMPLISSEZ LE FORMULAIRE:</B><BR>
+              <B>ABREVIATION:</B>DCI=Dénomination Commune Internationale
+              <FORM METHOD="POST" ACTION="Ajouter_ListeMedicament.php">              
                 <table >
                     <tr>
                         <td>DCI:</td>
@@ -22,11 +23,23 @@
                     </tr>
                     <tr>
                          <td>Catégorie:</td>
-                         <td><input type="text" name="cate" required></td>
+                         <td><input type="text" name="cate" ></td>
+                    </tr>
+                    <tr>
+                         <td>Stock Maximal:</td>
+                         <td><input type="text" name="sma" value=0 required></td>
+                    </tr>
+                    <tr>
+                         <td>Stock Minimal:</td>
+                         <td><input type="text" name="smi" value=0 required ></td>
+                    </tr>
+                    <tr>
+                         <td>Observation:</td>
+                         <td><input type="text" name="obs" ></td>
                     </tr>
                          <tr>
                             <td></td>
-                            <td><input type="SUBMIT" VALUE="SUIVANT"></td> 
+                            <td><input type="SUBMIT" VALUE="ENREGISTRER"></td> 
                          </tr>                                                
                 </table>                         
                                   
