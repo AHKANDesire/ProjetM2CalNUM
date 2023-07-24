@@ -17,7 +17,7 @@ $result=mysqli_query($con,$req)or die('ERROR');
             {
                 if($col['Denomination']==$dci and $col['Forme'] ==$forme and $col['Dosage']==$dosage)
                 {
-                 echo"<font color='red'>IL EST DEJA DANS LA LISTE</font>"."<br>";
+                 echo"<font color='green'>IL EST DANS LA LISTE DE MEDICAMENT</font>"."<br>";
                  echo"<b>IDENTIFICATION:</b><a href='Declaration_Medicament.php?Id=$col[0]'>SUIVANT</a> ";              
                  mysqli_close($con);
                  exit();                 
@@ -35,7 +35,7 @@ mysqli_close($con);
         <meta charset="utf-8">
     </head>
     <body>
-        <b><font color='red'>NOMINATION ENREGISTREE</font></b>
+        <b><font color='green'>NOMINATION ENREGISTREE</font></b>
         <table border="1">
             <tr>
                 <th>Id_Medicament</th><th>DCI</th><th>Forme</th><th>Dosage</th><th>Catégorie</th><th>Stock_max</th><th>Stock_min</th><th>Observation</th>
