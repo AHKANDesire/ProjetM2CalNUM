@@ -9,7 +9,7 @@ $id=$_GET["Id"];
                 <title> DeclarMedicament </title>
         </HEAD>
         <BODY>
-                   <b><font color='red'>IDENTIFICATION</font></b><BR>
+                   <b><font color='green'>IDENTIFICATION</font></b><BR>
                    <B>REMPLISSEZ LE FORMULAIRE:</B><BR>
               <FORM METHOD="POST" ACTION="Ajouter_DeclarationMedicament.php">
                 <table >
