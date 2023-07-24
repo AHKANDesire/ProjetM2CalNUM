@@ -25,4 +25,4 @@ $result=mysqli_query($con,$req)or die('ERROR');
             </tr>
         </table>
     </body>
-</html>:
+</html>
